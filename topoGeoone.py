@@ -23,8 +23,8 @@ class topoGeoonePlugin(object):
         self.provider = topoGeooneProvider()
         QgsApplication.processingRegistry().addProvider(self.provider)
 
-    def initGui(self):
+    def initGui(self): # Código para inicializar a interface gráfica do plugin
         self.initProcessing()
 
-    def unload(self):
-        QgsApplication.processingRegistry().removeProvider(self.provider)
+    def unload(self):  # Código para limpar/descarregar o plugin
+        QgsApplication.processingRegistry().removeProvider(self.provider) 

@@ -16,6 +16,6 @@ __author__ = 'profCazaroli'
 __date__ = '2024-06-20'
 __copyright__ = '(C) 2024 by profCazaroli'
 
-def classFactory(iface):  # pylint: disable=invalid-name
+def classFactory(iface):
     from .topoGeoone import topoGeoonePlugin
     return topoGeoonePlugin()
